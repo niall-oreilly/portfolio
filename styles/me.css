@@ -1,0 +1,23 @@
+/*****************
+
+ ☻/ well hi there!
+/▌
+/\
+
+*****************/
+
+#niall {
+	height: 190cm;
+	width: 100%;
+	background: Irish;
+	color: white;
+	filter: coffee;
+	perspective: unique;
+	animation-name: programming;
+	writing-mode: javascript;
+
+	&.christmas::after {
+		width: 200%;
+		overflow: visible;
+	}
+}
