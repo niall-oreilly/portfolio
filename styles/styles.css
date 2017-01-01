@@ -120,17 +120,16 @@ html {
 }
 
 .close-tab::before {
-	content: '\00d7';
-	text-shadow: 0 1px black;
+	display: block;
 	position: absolute;
-	top: -2px;
+	top: 0;
 	right: 30px;
 	font-size: 16px;
-	display: block;
 	color: gray;
 	text-align: center;
-	width: 15px;
-	height: 15px;
+	text-shadow: 0 1px black;
+	content: '\00d7';
+	position: absolute;
 }
 
 .close-tab:hover::before {
@@ -280,6 +279,11 @@ ul.tabs > li{
   text-overflow: ellipsis;
 }
 
+ul.tabs > li.closing {
+	transition: all;
+	animation: closing-tab .3s 1 forwards;
+}
+
 ul.tabs > li:before, ul.tabs > li:after{
   content : '';
   background : transparent;
@@ -290,6 +294,7 @@ ul.tabs > li:before, ul.tabs > li:after{
   top: 0px;
   border-style : solid;
   position : absolute;
+  pointer-events: none;
 }
 
 ul.tabs > li:before{
@@ -309,3 +314,26 @@ ul.tabs > li:after{
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
+
+
+
+
+
+
+@keyframes closing-tab {
+	0% {
+		transform: none;
+		width: 200px;
+		padding: 0 50px 0 25px;
+	}
+	50% {
+		transform: translateY(40px);
+		width: 200px;
+		padding: 0 50px 0 25px;
+	}
+	100% {
+		transform: translateY(40px);
+		width: 0;
+		padding: 0;
+	}
+}
