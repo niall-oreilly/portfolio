@@ -3,6 +3,7 @@
   "version": "5.0.4",
   "author": "Niall O'Reilly",
   "description": "Some of the technologies I'm familiar with",
+  
   "devDependencies": {
     "Javascript": "2015",
     "Ember": "^1.2.0",
@@ -27,6 +28,7 @@
     "Django": "1.8",
     "Ruby": "2.4.0",
   },
+
   "otherDependencies": {
   	"Photoshop" : "CS5",
   	"InDesign": "CS5",

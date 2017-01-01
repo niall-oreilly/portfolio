@@ -15,7 +15,7 @@
 html {
 	background-color: #272822;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 *::selection {
@@ -67,6 +67,11 @@ html {
 .sidebar ul ul li {
 	padding-left: 30px;
 }
+
+.sidebar ul ul ul li {
+	padding-left: 50px;
+}
+
 .sidebar > ul{
 	margin-top: 5px;
 }
@@ -78,19 +83,24 @@ html {
 }
 
 .sidebar .submenu.open {
-	max-height: 200px;
+	max-height: 300px;
 }
 
 .expandable::before {
 	content: '\25BA';
 	font-size: 12px;
 	color: #868686;
+	display: inline-block;
+	transition: transform .1s ease-out
 }
 
 .expandable:hover::before {
 	color: #aaa;
 }
 
+.expandable.open::before {
+	transform: rotateZ(90deg);
+}
 
 .tabs-container, .main {
 	margin-left: 220px;
@@ -136,9 +146,18 @@ html {
 }
 
 
-code {
-	-webkit-user-select: default;
-	cursor: auto;
+pre {
+	padding-left: 45px;
+	cursor: text;
+}
+
+code, code span {
+	-webkit-user-select: text;
+	cursor: text;
+}
+
+code a {
+	cursor: pointer;
 }
 
 
