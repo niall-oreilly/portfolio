@@ -15,24 +15,51 @@ $(document).ready(function(){
 	$('.close-tab').on('click', closeTab);
 
 
-	$.ajax({
-		url: 'content/test.html',
-		dataType: 'text',
-		success: function(response){
-			$codeElem.html(response);
-			Prism.highlightElement($codeElem[0], false, function(){
-				$('code a').attr('contenteditable', false);
+	function openFile(fileName){
+		var fileExtension = fileName.match(/[^.]*$/)[0];
+		if(fileExtension == 'ico') { //image
+			$('pre').hide();
+			$('img').show();
+		} else{
+			$.ajax({
+				url: 'content/'+fileName,
+				dataType: 'text',
+				success: function(response){
+
+					$codeElem.html(response);
+					
+					var syntax = 'html';
+					switch(fileExtension){
+						case 'json':
+							syntax = 'javascript';
+							break;
+						case 'js':
+							syntax = 'javascript';
+							break;
+						case 'scss':
+							syntax = 'css';
+							break;
+					}
+
+					$codeElem.attr('class','language-'+syntax);
+					$('img').hide();
+					$('pre').show();
+					Prism.highlightElement($codeElem[0], false, function(){
+						$('code a').attr('contenteditable', false).attr('target', '_blank');
+
+					});	
+
+				},
+				error: function(xhr, status, error){
+					console.log('XHR error:', xhr, status, error);
+				} 
 			});
-		},
-		error: function(xhr, status, error){
-			console.log('XHR error:', xhr, status, error);
-		} 
-	});
+		}
+	}
 
 
 	function openTab(fileName) {
-		$('.tabs').append(`<li>${fileName}<span class="close-tab"></span></li>`);
-
+		$('.tabs').append(`<li><span class="tabName">${fileName}</span><span class="close-tab"></span></li>`);
 
 		//attach listeners to new tabs
 		$('.tabs li').off('click').on('click', tabClicked);
@@ -49,22 +76,23 @@ $(document).ready(function(){
 			}).length;
 
 		if( !alreadyOpen ) {
-			openTab(fileName);	
+			openTab(fileName);
 		}
-
+		
+		openFile(fileName);
 		highlightFile(fileName);
 	}
 
 
 	function tabClicked() {
 		var fileName = $(this).text();
+		openFile(fileName);
 		highlightFile(fileName);
 	}
 
 
 
 	function highlightFile(fileName) {
-		console.log('highlightFile');
 		$('.tabs li').removeClass('active');
 		$('.file').removeClass('active');
 

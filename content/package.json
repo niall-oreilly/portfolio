@@ -1,9 +1,10 @@
+
 {
-  "name": "My-Skills",
-  "version": "5.0.4",
   "author": "Niall O'Reilly",
-  "description": "Some of the technologies I'm familiar with",
-  
+  "name": "My Skills",
+  "description": "Some of the technologies I've worked with",
+  "version": "5.0.4",
+
   "devDependencies": {
     "Javascript": "2015",
     "Ember": "^1.2.0",
@@ -13,6 +14,7 @@
     "Sass": "3.4.22",
     "Compass": "0.11",
     "Phonegap/Cordova": "3.7",
+    "Agile": "Kanban",
     "PhantomJS": "2.1",
     "Karma": "1.0",
     "Jasmine": "2.0",
