@@ -13,7 +13,9 @@
     "Gulp": "3.9.1",
     "Sass": "3.4.22",
     "Compass": "0.11",
+    "Bootstrap": "3",
     "Phonegap/Cordova": "3.7",
+    "Facebook Graph API": "2.0",
     "Agile": "Kanban",
     "PhantomJS": "2.1",
     "Karma": "1.0",
@@ -25,6 +27,7 @@
     "Processing": "2.0",
     "Coldfusion": "11",
     "PHP": "5.4",
+    "SQL": "2014"
     "Python": "2.7",
     "Flask": "0.12",
     "Django": "1.8",
