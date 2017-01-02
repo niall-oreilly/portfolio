@@ -7,8 +7,8 @@
 
   "devDependencies": {
     "Javascript": "2015",
-    "Ember": "^1.2.0",
-    "Angular": "1.6",
+    "EmberJS": "^1.2.0",
+    "AngularJS": "1.6",
     "VueJS": "2.0",
     "Gulp": "3.9.1",
     "Sass": "3.4.22",
