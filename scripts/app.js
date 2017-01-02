@@ -126,28 +126,7 @@ $(document).ready(function(){
 	}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	//load initial file
+	$('.tabs li').click();
 
 });
