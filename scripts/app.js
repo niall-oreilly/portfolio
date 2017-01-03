@@ -92,39 +92,33 @@ $(document).ready(function(){
 
 
 
-	function highlightFile(fileName) {
-		$('.tabs li').removeClass('active');
-		$('.file').removeClass('active');
-
-		$('.tabs li').filter(function(){
-			return $(this).text() == fileName;
-		}).addClass('active');
-
-		$('.file').filter(function(){
-			return $(this).text() == fileName;
-		}).addClass('active');
-
+	function highlightFile (fileName) {
+		function highlight(list){
+			list.removeClass('active');
+			list.filter(function(){
+				return $(this).text() == fileName;
+			}).addClass('active');
+		};
+		highlight($('.tabs li'));
+		highlight($('.file'));
 	}
 
 
-	function closeTab(event) {
+	function closeTab (event) {
 		event.stopPropagation();
 		var $tab = $(this).parent();
-		var activeTab = $tab.hasClass('active');
+		var isActive = $tab.hasClass('active');
 
 		if( $('.tabs li').length > 1 ) {
 			$tab.addClass('closing');
-			setTimeout(function(){
+			setTimeout( function(){
 				$tab.remove();
-				if(activeTab) {
+				if( isActive ) {
 					$('.tabs li').last().click();
 				}
 			}, 300);
-		};
-
-
+		}
 	}
-
 
 	//load initial file
 	$('.tabs li').click();
