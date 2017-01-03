@@ -108,7 +108,7 @@ pre.line-numbers > code {
 .token.selector,
 .token.prolog,
 .token.title .token.punctuation {
-  color: rgba(249, 38, 114, 0.76);
+  color: rgba(249, 38, 114, .75);
 }
 
 .token.property,
@@ -135,7 +135,7 @@ pre.line-numbers > code {
 .token.symbol,
 .token.url-reference .token.variable,
 .token.attr-name {
-  color: rgba(166, 226, 46, 0.74);
+  color: rgb(166, 226, 46);
 }
 
 .token.string,
@@ -144,7 +144,7 @@ pre.line-numbers > code {
 .token.cdata,
 .token.attr-value,
 .token.attr-value a.token.url-link {
-  color: #e6db74;
+  color: #ebdd56;
 }
 
 .token.constant,
@@ -159,7 +159,7 @@ pre.line-numbers > code {
 .token.punctuation,
 .token.variable,
 .token.macro.property {
-  color: rgba(248, 248, 242, 0.74);
+  color: rgba(248, 248, 242, .75);
 }
 
 .token.entity {
