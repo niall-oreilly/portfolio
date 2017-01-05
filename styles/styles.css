@@ -228,8 +228,9 @@ code, code span {
 	font-size: 12px;
 }
 
-code a {
+code a, code a:visited {
 	cursor: pointer;
+	color: #f92672;
 }
 
 img {
