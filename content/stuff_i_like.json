@@ -1,4 +1,16 @@
 
-<!-- Aspirations and Inspirations -->
+/* Aspirations and Inspirations:
+ I'll be adding links here that I find interesting / useful as I come across them */
 
-
+{
+ 	"The Future of Conversational UI" : "https://medium.com/the-layer/the-future-of-conversational-ui-belongs-to-hybrid-interfaces-8a228de0bdb5",
+ 	"The Ladder of Abstraction": "http://worrydream.com/#!2/LadderOfAbstraction",
+ 	"The Illusion of Life (Principles of animation)": "https://vimeo.com/93206523",
+ 	"An Intro to Reasonably Pure Functional JS": "https://www.sitepoint.com/an-introduction-to-reasonably-pure-functional-programming/",
+ 	"Learning from Lego: Modular Web Design": "http://alistapart.com/article/learning-from-lego-a-step-forward-in-modular-web-design",
+ 	"Lessons from a year of building web components": "https://www.youtube.com/watch?v=zfQoleQEa4w",
+ 	"Magic Beans": "https://soulwire.co.uk/magic-beans/",
+ 	"Messenger Add Image UI Concept": "https://uimovement.com/ui/335/add-recent-image/",
+ 	"Jedi Principles of UI animation": "https://medium.com/@adaptivepath/jedi-principles-of-ui-animation-2b88423b1dac",
+ 	"Strategies for keeping CSS specificity low": "https://css-tricks.com/strategies-keeping-css-specificity-low/"
+}

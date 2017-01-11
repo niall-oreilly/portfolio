@@ -123,4 +123,8 @@ $(document).ready(function(){
 	//load initial file
 	$('.tabs li').click();
 
+	$('.my_cv').off('click').click( function(){
+		window.open('content/Niall_OReilly_CV.pdf');
+	})
+
 });

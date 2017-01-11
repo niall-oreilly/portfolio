@@ -1,4 +1,6 @@
 
+// Get in touch! I'd love to hear from you.
+
 exports.getPhoneNumber = () => '086 075 3519';
 
 exports.getEmailAddress = () => 'nialloreilly123@gmail.com';
