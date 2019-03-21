@@ -1,32 +1,79 @@
 
-&lt;h1&gt;Fusioneer Work&lt;/h1&gt;
+&lt;h1&gt;Fusioneer Work (Sports Interaction)&lt;/h1&gt; [ https://www.sportsinteraction.com/ ]
+
+&lt;p title="Overview" &gt;
+	I worked as part of an agile team of 15 - 20 developers on a large-scale codebase.
+	We were divided into cross functional teams and used a modern workflow, deploying to production
+	dozens of times per day. My role was working closely with the UX dept to conceptualize and develop 
+	new features and reusable UI components.
+&lt;/p&gt;
 
 
-&lt;section title="Live Betting Overview Page"&gt;
+&lt;section title="Delighting the user"&gt;
 
 	&lt;p title="Description"&gt;
-		One of my favorite projects I've worked on at Fusioneer is the overview page for our live betting application. 
-		This Ember app receives real-time betting info and price changes from our Rails back end and allows the user to
-		bet on multiple games at the same time while giving instant feedback. 
-		I worked very closely with our lead designer (he sits 5 feet away) to bring his vision to life and added my
-		own flourishes such as designing the elastic motion for the animated tabs and expandable panels.
-
-		[ https://www.sportsinteraction.com/sportsbook/live-betting/#/overview ]
+		While at Fusioneer, I became a champion of CSS animation and micro-interactions on our site. 
+		Many of the design guidelines and mockups when I arrived contained only one state and no guidelines
+		for how the design would be interacted with. This allowed me to coordinate and add my own animation 
+		and interaction states which I enjoyed. The UX team was very impressed with the flourishes and motion 
+		I was adding to the designs so we formalised a process of consultation about animation and state changes 
+		and now all design guides include these. The site feels a lot more modern and dynamic as a result.
 	&lt;/p&gt;
 
 &lt;/section&gt;
 
 
-&lt;section title="Sports Interaction Desktop Homepage Redesign"&gt;
+&lt;section title="Desktop Site Responsiveness"&gt;
 
 	&lt;p title="Description"&gt;
-		I played a major role in the development of the new and improved homepage of the desktop site. 
-		The previous update to the homepage had been in 2011 and the site was beginning to look dated. 
-		The new update brought with it a fresh skeuminimal design and some motion elements along with a set of 
-		new standard elements such as custom dropdowns, new link styles etc. 
-		I worked back and forth with the designers to help bring about this update. 
-		The results can be seen in the center column at [ https://www.sportsinteraction.com ]
+		Our CEO noticed that all of our competitors sites filled more of his desktop screen when he visited. 
+		This was because our classic three column site layout had a fixed width of 960px and hadn’t been updated in over a decade. 
+		This was set as a top priority for the Front End team to fix in a timely manner. All the solutions put forward such as creating 
+		a full responsive from mobile to desktop site would be too time consuming. I put forward an idea and championed a 
+		Respo-Medium™ (patent pending ;)) site. The site would retain it’s layout but be responsive between 720px and 1280px. 
+		I played a massive role in helping the UX team understand how this would work and in implementing this solution. 
+		Me and another developer managed to completely overhaul the whole site using flex layouts and responsive design in only 
+		4 weeks using this method.
 	&lt;/p&gt;
 
 &lt;/section&gt;
+
+
+&lt;section title="Progressive Web App"&gt;
+
+	&lt;p title="Description"&gt;
+		After reading a lot about PWAs and their many benefits and few drawbacks in terms of time needed to implement, 
+		I pushed for our mobile site to be converted to a progressive web app. After putting together a tech demo in a couple of hours 
+		and showing our head of engineering they were very excited as the company had been thinking about developing a 
+		hybrid mobile application for the app stores. I implemented the initial stages of the PWA while at the company 
+		and there was talk of adding push notifications and more complex functionality later.
+	&lt;/p&gt;
+
+&lt;/section&gt;
+
+&lt;section title="VueJS Introduction"&gt;
+
+	&lt;p title="Description"&gt;
+		I was a proponent of Vue being brought in for use across our site as our main JS library. 
+		Because of it’s modularity we could convert the site piece by piece without affecting other components on the page. 
+		Before leaving the company I was moved to a project to port over our line managers’ real-time odds manipulation software 
+		from React to Vue so it was in line with the rest of the site.
+	&lt;/p&gt;
+
+&lt;/section&gt;
+
+
+&lt;section title="Front End Build Process"&gt;
+
+	&lt;p title="Description"&gt;
+		While at Fusioneer I noticed many problems and bottlenecks in our front end build system. 
+		One of the main problems was an old YUI compressor java applet which needed to be ran through opening your web browser
+		and hitting a local url; a step many people forgot to do before deploying, thus breaking the site. 
+		I automated this step by adding it to the gulp task using phantomJS. Later this same JS compressor had problems with 
+		compiling ES6+ code so I replaced it completely with webpack. I also decreased runtime by having certain tasks run concurrently. 
+	&lt;/p&gt;
+
+&lt;/section&gt;
+
+
 
