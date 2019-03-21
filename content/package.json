@@ -1,15 +1,13 @@
 
 {
   "author": "Niall O'Reilly",
-  "name": "My Skills",
-  "description": "Some of the technologies I've worked with",
+  "description": "Some of the tech I've worked with",
   "version": "7.0.4",
 
   "devDependencies": {
     "Javascript": "ES6+",
     "EmberJS": "^1.2.0",
     "VueJS": "2.0",
-    "React": "15.1",
     "Gulp": "3.9.1",
     "Sass": "3.4.22",
     "Webpack": "~3.0"
